@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek - Nama Kamu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">NamaKamu.</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="projects.html" class="active">Proyek</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="container">
+            <h1 class="section-title">Proyek Saya</h1>
+            <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan</p>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Proyek 1">
+                        <div class="project-overlay">
+                            <a href="https://github.com/username/project1" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://project1-demo.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 1</h3>
+                        <p>Deskripsi singkat proyek ini. Teknologi yang digunakan dan masalah yang diselesaikan.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Proyek 2">
+                        <div class="project-overlay">
+                            <a href="https://github.com/username/project2" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 2</h3>
+                        <p>Deskripsi singkat proyek mobile app ini.</p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Proyek 3">
+                        <div class="project-overlay">
+                            <a href="https://figma.com/file/..." target="_blank" class="project-link">
+                                <i class="fab fa-figma"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 3</h3>
+                        <p>UI/UX Design untuk aplikasi [nama].</p>
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Nama Kamu. Dibuat dengan <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
